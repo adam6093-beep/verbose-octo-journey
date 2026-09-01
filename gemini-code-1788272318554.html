@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Metabolism & ATP Concept Map</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-blue: #38bdf8;
+            --accent-green: #4ade80;
+            --accent-purple: #c084fc;
+            --accent-orange: #fb923c;
+            --accent-rose: #f43f5e;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: var(--accent-blue);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p.subtitle {
+            color: var(--text-sub);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .root-node {
+            background: linear-gradient(135deg, #0284c7, #2563eb);
+            padding: 20px 40px;
+            border-radius: 16px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 25px rgba(2, 132, 199, 0.4);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+            border-top: 4px solid var(--accent-blue);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .card.card-1 { border-color: var(--accent-blue); }
+        .card.card-2 { border-color: var(--accent-green); }
+        .card.card-3 { border-color: var(--accent-purple); }
+        .card.card-4 { border-color: var(--accent-orange); }
+        .card.card-5 { border-color: var(--accent-rose); }
+
+        .card h2 {
+            font-size: 1.25rem;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card.card-1 h2 { color: var(--accent-blue); }
+        .card.card-2 h2 { color: var(--accent-green); }
+        .card.card-3 h2 { color: var(--accent-purple); }
+        .card.card-4 h2 { color: var(--accent-orange); }
+        .card.card-5 h2 { color: var(--accent-rose); }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid #334155;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        li strong {
+            color: #ffffff;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.1);
+            margin-left: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="root-node">⚡ HUMAN METABOLISM & ATP</div>
+    <p class="subtitle">Interactive Core Concept Map</p>
+
+    <div class="grid-container">
+
+        <!-- Card 1 -->
+        <div class="card card-1">
+            <h2>1. Definition</h2>
+            <ul>
+                <li><strong>Anabolism:</strong> Building complex molecules <span class="badge">Requires ATP</span></li>
+                <li><strong>Catabolism:</strong> Breaking down molecules <span class="badge">Releases ATP</span></li>
+            </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card card-2">
+            <h2>2. Macromolecules</h2>
+            <ul>
+                <li><strong>Carbohydrates:</strong> Primary fuel source (Glucose)</li>
+                <li><strong>Lipids:</strong> High-density energy storage (Fatty Acids)</li>
+                <li><strong>Proteins:</strong> Structural/Functional fuel (Amino Acids)</li>
+            </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card card-3">
+            <h2>3. Nutrient Pools</h2>
+            <ul>
+                <li><strong>Nutrient Pool:</strong> Circulating blood nutrients</li>
+                <li><strong>Storage Deposits:</strong> Liver & Muscle Glycogen, Adipose tissue</li>
+                <li><strong>Dynamic Balance:</strong> Continuous flux between stored & free state</li>
+            </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card card-4">
+            <h2>4. ATP Pathways</h2>
+            <ul>
+                <li><strong>Glycolysis:</strong> Cytoplasm (Anaerobic / Aerobic)</li>
+                <li><strong>Citric Acid Cycle:</strong> Mitochondrial Matrix</li>
+                <li><strong>Electron Transport:</strong> Inner Mitochondrial Membrane</li>
+            </ul>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card card-5">
+            <h2>5. Metabolic States</h2>
+            <ul>
+                <li><strong>Absorptive State:</strong> Fed State <span class="badge" style="color:var(--accent-green)">Insulin Driven</span></li>
+                <li><strong>Post-Absorptive State:</strong> Fasted State <span class="badge" style="color:var(--accent-rose)">Glucagon Driven</span></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
