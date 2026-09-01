@@ -1,0 +1,14 @@
+[HUMAN METABOLISM]
+                                        │
+    ┌───────────────────┬───────────────┴───────────────┬───────────────────┐
+    │                   │                               │                   │
+[1. DEFINITION]  [2. MACROMOLECULES]             [3. POOLS]         [4. PATHWAYS]
+    │                   │                               │                   │
+    ├─ Anabolism        ├─ Carbohydrates (Glucose)      ├─ Nutrient Pool    ├─ Glycolysis (Cytoplasm)
+    └─ Catabolism       ├─ Lipids (Fatty Acids)         ├─ Storage Deposits ├─ Citric Acid Cycle (Mito)
+                        └─ Proteins (Amino Acids)       └─ Dynamic Balance  └─ Electron Transport (Mito)
+                                                                            │
+                                                                    [5. STATES]
+                                                                            │
+                                                                            ├─ Absorptive (Fed/Insulin)
+                                                                            └─ Post-Absorptive (Fasted/Glucagon)
