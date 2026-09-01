@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Human Metabolism & ATP Concept Map</title>
+    <title>Human Metabolism & ATP Study Guide</title>
     <style>
         :root {
             --bg-color: #0f172a;
@@ -14,7 +14,8 @@
             --accent-orange: #fb923c;
             --accent-rose: #f43f5e;
             --text-main: #f8fafc;
-            --text-sub: #94a3b8;
+            --text-sub: #cbd5e1;
+            --border-color: #334155;
         }
 
         body {
@@ -30,7 +31,7 @@
 
         h1 {
             color: var(--accent-blue);
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             text-align: center;
             margin-bottom: 8px;
             text-transform: uppercase;
@@ -39,8 +40,9 @@
 
         p.subtitle {
             color: var(--text-sub);
-            margin-bottom: 40px;
+            margin-bottom: 35px;
             text-align: center;
+            font-size: 1.1rem;
         }
 
         .root-node {
@@ -48,17 +50,17 @@
             padding: 20px 40px;
             border-radius: 16px;
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             box-shadow: 0 10px 25px rgba(2, 132, 199, 0.4);
-            margin-bottom: 40px;
+            margin-bottom: 35px;
             text-align: center;
         }
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: 24px;
-            max-width: 1200px;
+            max-width: 1300px;
             width: 100%;
         }
 
@@ -66,14 +68,8 @@
             background-color: var(--card-bg);
             border-radius: 12px;
             padding: 24px;
-            border-top: 4px solid var(--accent-blue);
+            border-top: 5px solid var(--accent-blue);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
         }
 
         .card.card-1 { border-color: var(--accent-blue); }
@@ -83,11 +79,11 @@
         .card.card-5 { border-color: var(--accent-rose); }
 
         .card h2 {
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             margin-top: 0;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .card.card-1 h2 { color: var(--accent-blue); }
@@ -96,21 +92,38 @@
         .card.card-4 h2 { color: var(--accent-orange); }
         .card.card-5 h2 { color: var(--accent-rose); }
 
+        .section-title {
+            font-weight: bold;
+            color: #ffffff;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        p.desc {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: var(--text-sub);
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .translation {
+            color: #fde047;
+            font-weight: 500;
+        }
+
         ul {
-            list-style-type: none;
-            padding-left: 0;
-            margin: 0;
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0 0 12px 0;
         }
 
         li {
-            padding: 8px 0;
-            border-bottom: 1px solid #334155;
-            font-size: 0.95rem;
-            line-height: 1.4;
-        }
-
-        li:last-child {
-            border-bottom: none;
+            padding: 4px 0;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            color: var(--text-sub);
         }
 
         li strong {
@@ -131,55 +144,89 @@
 <body>
 
     <div class="root-node">⚡ HUMAN METABOLISM & ATP</div>
-    <p class="subtitle">Interactive Core Concept Map</p>
+    <p class="subtitle">Detailed Concept Map & Study Notes</p>
 
     <div class="grid-container">
 
         <!-- Card 1 -->
         <div class="card card-1">
-            <h2>1. Definition</h2>
+            <h2>1. What is Metabolism?</h2>
+            <p class="desc"><strong>Metabolism</strong> <span class="translation">(all chemical reactions in your body)</span> is the set of processes that convert nutrients into cellular energy (ATP) to keep you alive.</p>
+            
+            <span class="section-title">Two Main Pathways:</span>
             <ul>
-                <li><strong>Anabolism:</strong> Building complex molecules <span class="badge">Requires ATP</span></li>
-                <li><strong>Catabolism:</strong> Breaking down molecules <span class="badge">Releases ATP</span></li>
+                <li><strong>Anabolism <span class="translation">(building up)</span>:</strong> Combines small, simple molecules into large, complex ones. <span class="badge">Requires ATP energy</span>
+                    <br><em>Example:</em> Glycogenesis <span class="translation">(building stored sugar from individual glucose units)</span> or making muscle protein.</li>
+                <li><strong>Catabolism <span class="translation">(breaking down)</span>:</strong> Breaks complex nutrients down into smaller pieces to release stored energy. <span class="badge">Produces ATP energy</span>
+                    <br><em>Example:</em> Glycolysis <span class="translation">(splitting sugar molecules open)</span>.</li>
             </ul>
         </div>
 
         <!-- Card 2 -->
         <div class="card card-2">
-            <h2>2. Macromolecules</h2>
+            <h2>2. The 3 Macromolecules</h2>
+            <p class="desc">These are the three major nutrients <span class="translation">(large food molecules)</span> converted into ATP energy:</p>
+            
             <ul>
-                <li><strong>Carbohydrates:</strong> Primary fuel source (Glucose)</li>
-                <li><strong>Lipids:</strong> High-density energy storage (Fatty Acids)</li>
-                <li><strong>Proteins:</strong> Structural/Functional fuel (Amino Acids)</li>
+                <li><strong>Carbohydrates:</strong> Broken down into <em>Glucose</em> <span class="translation">(simple blood sugar)</span>.
+                    <br>• <strong>Role:</strong> First-choice, fastest fuel source for cells. Essential for brain and red blood cells. (~4 kcal/g)</li>
+                <li><strong>Lipids <span class="translation">(Fats)</span>:</strong> Broken down into <em>Free Fatty Acids + Glycerol</em>.
+                    <br>• <strong>Role:</strong> High-density, long-term energy storage reserves. (~9 kcal/g — most energy-dense)</li>
+                <li><strong>Proteins:</strong> Broken down into <em>Amino Acids</em> <span class="translation">(building blocks of muscle and tissue)</span>.
+                    <br>• <strong>Role:</strong> Used for structure, enzymes, and repair. Used for energy only as a <em>last resort</em> during starvation. (~4 kcal/g)</li>
             </ul>
         </div>
 
         <!-- Card 3 -->
         <div class="card card-3">
-            <h2>3. Nutrient Pools</h2>
+            <h2>3. Macromolecule Pools</h2>
+            <p class="desc">The body maintains circulating <strong>nutrient pools</strong> <span class="translation">(free nutrients in blood and fluids)</span> that constantly exchange with storage deposits.</p>
+            
             <ul>
-                <li><strong>Nutrient Pool:</strong> Circulating blood nutrients</li>
-                <li><strong>Storage Deposits:</strong> Liver & Muscle Glycogen, Adipose tissue</li>
-                <li><strong>Dynamic Balance:</strong> Continuous flux between stored & free state</li>
+                <li><strong>Glucose Pool:</strong> Managed tightly in blood.
+                    <br>• <em>Storage:</em> Stored as Glycogen <span class="translation">(branched sugar chains)</span> in the Liver <span class="translation">(for the body)</span> and Skeletal Muscles <span class="translation">(for muscle use only)</span>. Limited capacity!</li>
+                <li><strong>Fatty Acid Pool:</strong>
+                    <br>• <em>Storage:</em> Stored as Triglycerides in Adipose Tissue <span class="translation">(fat cells)</span>. Virtually unlimited storage capacity.</li>
+                <li><strong>Amino Acid Pool:</strong>
+                    <br>• <em>Storage:</em> No true "storage pool." Excess amino acids cannot be saved; they are converted to glucose/fat or used for energy, losing nitrogen as Urea <span class="translation">(urine waste)</span>.</li>
             </ul>
         </div>
 
         <!-- Card 4 -->
         <div class="card card-4">
             <h2>4. ATP Pathways</h2>
+            <p class="desc">The body uses 3 connected chemical stages to turn glucose into ATP cellular energy:</p>
+            
             <ul>
-                <li><strong>Glycolysis:</strong> Cytoplasm (Anaerobic / Aerobic)</li>
-                <li><strong>Citric Acid Cycle:</strong> Mitochondrial Matrix</li>
-                <li><strong>Electron Transport:</strong> Inner Mitochondrial Membrane</li>
+                <li><strong>1. Glycolysis <span class="translation">(Sugar-Splitting)</span>:</strong>
+                    <br>• <strong>Where:</strong> Cytoplasm <span class="translation">(fluid inside cell)</span>.
+                    <br>• <strong>Process:</strong> Breaks 1 Glucose into 2 Pyruvate molecules.
+                    <br>• <strong>Yield:</strong> 2 ATP. (Does not require oxygen).</li>
+                <li><strong>2. Citric Acid Cycle / Krebs Cycle:</strong>
+                    <br>• <strong>Where:</strong> Mitochondrial Matrix <span class="translation">(center of power-plant organelle)</span>.
+                    <br>• <strong>Process:</strong> Strips high-energy electrons off acetylated fuel.
+                    <br>• <strong>Yield:</strong> 2 ATP, plus electron carriers (NADH & FADH₂). Releases CO₂ as waste.</li>
+                <li><strong>3. Electron Transport Chain:</strong>
+                    <br>• <strong>Where:</strong> Inner Mitochondrial Membrane <span class="translation">(inner wall of mitochondrion)</span>.
+                    <br>• <strong>Process:</strong> Uses oxygen to harvest high-energy electrons (Oxidative Phosphorylation).
+                    <br>• <strong>Yield:</strong> ~28 to 32 ATP <span class="translation">(Massive energy payout!)</span>.</li>
             </ul>
         </div>
 
         <!-- Card 5 -->
         <div class="card card-5">
-            <h2>5. Metabolic States</h2>
+            <h2>5. Absorptive vs. Post-Absorptive</h2>
+            <p class="desc">How the body shifts processes based on whether food was recently eaten or not:</p>
+            
             <ul>
-                <li><strong>Absorptive State:</strong> Fed State <span class="badge" style="color:var(--accent-green)">Insulin Driven</span></li>
-                <li><strong>Post-Absorptive State:</strong> Fasted State <span class="badge" style="color:var(--accent-rose)">Glucagon Driven</span></li>
+                <li><strong>Absorptive State <span class="translation">(Fed State)</span>:</strong>
+                    <br>• <strong>Timing:</strong> During to ~4 hours after eating.
+                    <br>• <strong>Key Hormone:</strong> <strong>Insulin</strong> <span class="translation">(lowers blood sugar)</span>.
+                    <br>• <strong>Goal:</strong> Use incoming glucose for ATP; store all excess nutrients (Glycogenesis & Lipogenesis). Anabolic state.</li>
+                <li><strong>Post-Absorptive State <span class="translation">(Fasting State)</span>:</strong>
+                    <br>• <strong>Timing:</strong> Late between meals, overnight, or starvation.
+                    <br>• <strong>Key Hormone:</strong> <strong>Glucagon</strong> <span class="translation">(raises blood sugar)</span> + Epinephrine.
+                    <br>• <strong>Goal:</strong> Maintain blood sugar level. Breaks down stored glycogen (Glycogenolysis) or creates NEW glucose from amino acids (Gluconeogenesis). Catabolic state.</li>
             </ul>
         </div>
 
